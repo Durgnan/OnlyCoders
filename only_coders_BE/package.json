@@ -3,13 +3,27 @@
   "version": "1.0.0",
   "description": "OnlyCoders Backend Service",
   "main": "index.js",
+  "author": "Durgesh Nandan (Dan)",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "OnlyCoders"
   },
-  "author": "Durgesh Nandan (Dan)",
-  "license": "ISC"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^7.5.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
