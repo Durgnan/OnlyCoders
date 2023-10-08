@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 const UserSchema = new mongoose.Schema({
-    fullName: {type: String, required: [true, "can't be blank"], match: [/^[a-zA-Z0-9]+$/, 'is invalid']},
+    fullName: {type: String, required: [true, "can't be blank"]},
     email: {type: String, required: [true, "can't be blank"], match: [/\S+@\S+\.\S+/, 'is invalid']},
     password: {type: String, required: [true, "can't be blank"]}
 })
